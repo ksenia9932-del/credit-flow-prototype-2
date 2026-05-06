@@ -159,7 +159,7 @@ export default function PromoPage() {
         <div className="promo-banner__content">
           <div className="promo-banner__image">
             <img
-              src="/assets/images/Promo Page Image.png"
+              src={`${import.meta.env.BASE_URL}assets/images/Promo Page Image.png`}
               alt="Промо"
               className="promo-banner__img"
             />
@@ -290,28 +290,28 @@ export default function PromoPage() {
         <h2 className="promo-section__title">Оборотный кредит для&nbsp;вашего бизнеса</h2>
         <div className="promo-cards-list">
           <div className="promo-card">
-            <img src="/assets/images/Hand & Money.png" alt="" className="promo-card__img" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/Hand & Money.png`} alt="" className="promo-card__img" />
             <div className="promo-card__content">
               <h3 className="promo-card__title">Получите деньги быстро</h3>
               <p className="promo-card__text">Они придут на ваш счёт в Точка Банке за 1‑2 рабочих дня, обычно это занимает всего 15 минут</p>
             </div>
           </div>
           <div className="promo-card">
-            <img src="/assets/images/Darts.png" alt="" className="promo-card__img" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/Darts.png`} alt="" className="promo-card__img" />
             <div className="promo-card__content">
               <h3 className="promo-card__title">Тратьте на любые цели</h3>
               <p className="promo-card__text">Снимайте наличные, закупайте товары, оплачивайте услуги или рекламу — используйте кредит для любых задач</p>
             </div>
           </div>
           <div className="promo-card">
-            <img src="/assets/images/Heart.png" alt="" className="promo-card__img" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/Heart.png`} alt="" className="promo-card__img" />
             <div className="promo-card__content">
               <h3 className="promo-card__title">Погашайте досрочно без переплат</h3>
               <p className="promo-card__text">Можно вернуть деньги раньше — частично или полностью, за это нет штрафов</p>
             </div>
           </div>
           <div className="promo-card">
-            <img src="/assets/images/Pig With Coins.png" alt="" className="promo-card__img" />
+            <img src={`${import.meta.env.BASE_URL}assets/images/Pig With Coins.png`} alt="" className="promo-card__img" />
             <div className="promo-card__content">
               <h3 className="promo-card__title">Без залога и запроса документов</h3>
               <p className="promo-card__text">Мы рассчитали условия кредита по вашим оборотам — вам остаётся только взять деньги</p>
