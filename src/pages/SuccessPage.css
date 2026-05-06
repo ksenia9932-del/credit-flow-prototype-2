@@ -1,0 +1,79 @@
+.success-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--bg-default);
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.success-page__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 96px;
+  padding-left: var(--spacing-10x);
+  padding-right: var(--spacing-10x);
+}
+
+.success-page__icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--rounding-5x);
+  background-color: var(--bg-success-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-10x);
+}
+
+.success-page__title {
+  font-family: 'TT Norms Pro Tochka', system-ui, sans-serif;
+  font-size: var(--ttn-600-4xl-size);
+  line-height: var(--ttn-600-4xl-lh);
+  font-weight: 600;
+  color: var(--primitive-primary);
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.success-page__text {
+  font-family: 'TT Norms Pro Tochka', system-ui, sans-serif;
+  font-size: var(--ttn-400-m-02-size);
+  line-height: var(--ttn-400-m-02-lh);
+  font-weight: 400;
+  color: var(--primitive-primary);
+  margin: 0 0 var(--spacing-3x) 0;
+  text-align: left;
+}
+
+.success-page__text:last-child {
+  margin-bottom: 0;
+}
+
+.success-page__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-5x);
+  background-color: var(--bg-default);
+}
+
+.success-page__footer .btn-primary {
+  background-color: var(--primitive-brand);
+  color: var(--primitive-primary-on-inverse);
+  border-radius: var(--rounding-3x);
+}
+
+.success-page__footer .btn-primary:hover {
+  background-color: #7350c9;
+}
+
+.success-page__footer .btn-primary:active {
+  background-color: #6a45bf;
+}

@@ -1,0 +1,27 @@
+.tap-indicator-container {
+  position: relative;
+}
+
+.tap-indicator-circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  margin-left: -14px;
+  margin-top: -14px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  animation: tap-ripple 500ms ease-out forwards;
+  z-index: 99999;
+}
+
+@keyframes tap-ripple {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}

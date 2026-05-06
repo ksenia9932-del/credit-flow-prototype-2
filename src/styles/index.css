@@ -1,0 +1,28 @@
+@import './variables.css';
+
+:root {
+  font-family: 'TT Norms Pro Tochka', system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--primitive-primary);
+  background-color: var(--page-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

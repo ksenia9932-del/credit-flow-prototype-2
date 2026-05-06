@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: 'TT Norms Pro Tochka', system-ui, sans-serif;
+  font-size: var(--ttn-500-m-01-size);
+  line-height: var(--ttn-500-m-01-lh);
+  font-weight: 500;
+  border-radius: var(--rounding-3x);
+  padding: var(--spacing-4x) var(--spacing-6x);
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primitive-primary);
+  color: var(--primitive-primary-on-inverse);
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+}
+
+.btn-primary:active {
+  background-color: #000000;
+}

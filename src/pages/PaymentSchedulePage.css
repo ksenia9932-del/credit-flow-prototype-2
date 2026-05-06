@@ -1,0 +1,206 @@
+.payment-schedule-page {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-5x);
+  padding-bottom: var(--spacing-10x);
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--page-primary);
+}
+
+/* Header */
+.payment-schedule-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-6x);
+}
+
+.payment-schedule-header__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--rounding-2x);
+  color: var(--primitive-primary);
+  padding: 0;
+  transition: background-color 0.15s ease;
+}
+
+.payment-schedule-header__back:hover {
+  background-color: var(--bg-neutral-1);
+}
+
+.payment-schedule-header__title {
+  flex: 1;
+  text-align: center;
+  font-size: var(--ttn-500-m-01-size);
+  line-height: var(--ttn-500-m-01-lh);
+  font-weight: 500;
+  color: var(--primitive-primary);
+  margin: 0;
+}
+
+.payment-schedule-header__spacer {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* Info Banner */
+.payment-schedule-info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3x);
+  background-color: transparent;
+  border: 1px solid var(--primitive-neutral-1);
+  border-radius: var(--rounding-4x);
+  padding: var(--spacing-4x);
+  margin-bottom: var(--spacing-6x);
+}
+
+.payment-schedule-info__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--primitive-brand);
+}
+
+.payment-schedule-info__text {
+  font-size: var(--ttn-400-m-02-size);
+  line-height: var(--ttn-400-m-02-lh);
+  font-weight: 400;
+  color: var(--primitive-primary);
+  margin: 0;
+}
+
+/* Year Switcher */
+.payment-schedule-years {
+  display: flex;
+  gap: var(--spacing-2x);
+  margin-bottom: var(--spacing-6x);
+}
+
+.payment-schedule-years__btn {
+  padding: var(--spacing-2x) var(--spacing-4x);
+  border-radius: var(--rounding-2x);
+  font-size: var(--ttn-500-s-01-size);
+  line-height: var(--ttn-500-s-01-lh);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1.5px solid transparent;
+  background-color: var(--bg-neutral-1);
+  color: var(--primitive-primary);
+}
+
+.payment-schedule-years__btn--active {
+  border-color: var(--primitive-primary);
+  background-color: var(--bg-default);
+}
+
+.payment-schedule-years__btn:hover {
+  background-color: var(--bg-neutral-2);
+}
+
+.payment-schedule-years__btn--active:hover {
+  background-color: var(--bg-default);
+}
+
+/* Payment List */
+.payment-schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8x);
+}
+
+/* Payment Item */
+.payment-schedule-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4x);
+  cursor: pointer;
+  padding: var(--spacing-2x);
+  margin: calc(-1 * var(--spacing-2x));
+  border-radius: var(--rounding-3x);
+  transition: background-color 0.15s ease;
+}
+
+.payment-schedule-item:hover {
+  background-color: var(--container-transparent-1);
+}
+
+.payment-schedule-item:active {
+  background-color: var(--container-transparent-2);
+}
+
+.payment-schedule-item__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: var(--rounding-10x);
+  background-color: var(--bg-neutral-1);
+}
+
+.payment-schedule-item__number {
+  font-size: var(--ttn-500-m-01-size);
+  line-height: var(--ttn-500-m-01-lh);
+  font-weight: 600;
+  color: var(--primitive-primary);
+}
+
+.payment-schedule-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1x);
+}
+
+.payment-schedule-item__date {
+  font-size: var(--ttn-500-l-01-size);
+  line-height: var(--ttn-500-l-01-lh);
+  font-weight: 500;
+  color: var(--primitive-primary);
+}
+
+.payment-schedule-item__amount {
+  font-size: var(--ttn-400-s-02-size);
+  line-height: var(--ttn-400-s-02-lh);
+  font-weight: 400;
+  color: var(--primitive-secondary);
+}
+
+/* Payment Detail (Bottom Sheet) */
+.payment-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4x);
+  padding: var(--spacing-2x) 0;
+}
+
+.payment-detail__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-detail__label {
+  font-size: var(--ttn-400-m-02-size);
+  line-height: var(--ttn-400-m-02-lh);
+  font-weight: 400;
+  color: var(--primitive-secondary);
+}
+
+.payment-detail__value {
+  font-size: var(--ttn-500-m-01-size);
+  line-height: var(--ttn-500-m-01-lh);
+  font-weight: 500;
+  color: var(--primitive-primary);
+}
