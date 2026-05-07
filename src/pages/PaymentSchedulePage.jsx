@@ -18,9 +18,7 @@ const commission = amount * commissionRate
 const monthlyPayment = principalPart + commission
 
   const payments = Array.from({ length: term + 1 }, (_, index) => {
-    const date = index === 0
-    ? new Date(2025, 4, 1)
-    : new Date(2025, 4 + index - 1, 2)
+    const date = new Date(2025, 4 + index, 1)
 
   const isFirstPayment = index === 0
   const isLastPayment = index === term
@@ -123,6 +121,11 @@ commission: isFirstPayment
 <span className="payment-schedule-item__amount">
   {Math.round(payment.amount).toLocaleString('ru-RU')} ₽
 </span>
+            </div>
+            <div className="payment-schedule-item__chevron">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75 13.5L11.25 9L6.75 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </div>
           </div>
         ))}
